@@ -1,0 +1,32 @@
+// c structures 
+#include<stdio.h>//scanf(), printf()
+#include<string.h>//strcpy()
+
+struct book{
+  char title [30];
+  char author [30];
+  int year;
+  char ISBN [13];
+  float price;
+  } book;
+  int main ()
+  {
+  // struct  book;
+  strcpy(book . title,"introduction to c programming");
+  strcpy(book.author,"John Smith");
+  book.year=2022;
+  strcpy(book.ISBN," 9780131103627");
+  book.price=49.99;
+  printf("title:%s\n",book.title);
+  printf("author:%s\n", book.author);
+  printf(" year:%d\n",book.year);
+  printf("ISBN:%s\n", book.ISBN);
+  printf("price:%f\n", book.price);
+  /*
+  //prompting the user to enter 
+  printf("Enter title:");
+  scanf("%s",& book.title);
+  printf("title:%s\n",);
+  */
+  return 0 ;
+  }
