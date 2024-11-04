@@ -29,23 +29,22 @@ int main() {
     printf("ISBN: %s\n", myBook.ISBN);
     printf("Price: %.2f\n", myBook.price);
 
-    //  Prompt the user to enter values
-    struct book userBook;
-    printf("\nEnter Book Details:\n");
+    //  Prompt the user to enter values 
+    
     printf("Title: ");
-    fgets(userBook.title, 30, stdin);
+    scanf (userBook.title, 30, stdin);
     printf("Author: ");
-    fgets(userBook.author, 30, stdin);
+    scanf (userBook.author, 30, stdin);
     printf("Publication Year: ");
     scanf("%d", &userBook.publicationYear);
     
     printf("ISBN: ");
-    fgets(userBook.ISBN, 13, stdin);
+    scanf (userBook.ISBN, 13, stdin);
     printf("Price: ");
     scanf("%f", &userBook.price);
 
     // Print the values entered 
-    printf("\nUser Entered Book Details:\n");
+    
     printf("Title: %s", userBook.title);
     printf("Author: %s", userBook.author);
     printf("Publication Year: %d\n", userBook.publicationYear);
